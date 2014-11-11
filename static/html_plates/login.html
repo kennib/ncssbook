@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+			'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Welcome to NCSSBook</title>
+	
+  <base href="http://localhost:8888/" />
+  <link rel="stylesheet" type="text/css" href="static/css/login.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+  <script type="text/javascript" src="static/js/builder.js"></script>
+  <script type="text/javascript" src="static/js/controls.js"></script>
+  <script type="text/javascript" src="static/js/dragdrop.js"></script>
+  <script type="text/javascript" src="static/js/effects.js"></script>
+  <script type="text/javascript" src="static/js/scriptaculous.js"></script>
+  <script type="text/javascript" src="static/js/slider.js"></script>
+  <script type="text/javascript" src="static/js/sound.js"></script>
+  <script type="text/javascript" src="static/js/unittest.js"></script>
+  <script type="text/javascript" src="static/js/prototype.js"></script>
+</head>
+
+<body>
+
+<div class="top">
+
+<div class="left">
+<h1>NCSSBook</h1>
+</div>
+
+<div class="right">
+<h2>Already have an account?</h2>
+<form name="login" action="">
+    <ul>
+        <li>
+        Username:
+        <input type="text" name="user" />
+        </li>
+    </ul>
+    <input type="submit" value="Login" />
+    <input type="hidden" name="form_id" value="login" />
+    
+</form>
+</div>
+</div>
+<div class="center">
+<div class="box grey">
+<h1>Create a new account</h1>
+<form name="signup" action="" method="post">
+
+    <input type="hidden" name="form_id" value="signup" />
+    <ul>
+      
+        <table>
+          <tr>
+            <td>Username</td>
+            <td><input type="text" name="user" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="passwd1" /></td>
+          </tr>
+          <tr>
+            <td>Password (again)</td>
+            <td><input type="password" name="passwd2" /></td>
+          </tr>
+          <tr>
+            <td>First name</td>
+            <td><input type="text" name="first" /></td>
+          </tr>
+          <tr>
+            <td>Last name</td>
+            <td><input type="text" name="last" /></td>
+          </tr>
+          <tr>
+            <td>DOB</td>
+            <td><input type="text" name="dob" /></td>
+          </tr>
+        </table>
+    </ul>
+    <input type="submit" value="Sign up" />
+</div>
+</div>
+</body>
+</html>

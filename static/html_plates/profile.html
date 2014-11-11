@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+			'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title><% profile_name %>'s NCSSBook Profile</title>
+
+  <base href="http://localhost:8888/" />
+  
+  <link rel="stylesheet" type="text/css" href="static/css/profile.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+
+  <script type="text/javascript" src="static/js/prototype.js"></script>
+  <script type="text/javascript" src="static/js/builder.js"></script>
+  <script type="text/javascript" src="static/js/effects.js"></script>
+  <script type="text/javascript" src="static/js/controls.js"></script>
+  <script type="text/javascript" src="static/js/dragdrop.js"></script>
+  <script type="text/javascript" src="static/js/scriptaculous.js"></script>
+  <script type="text/javascript" src="static/js/slider.js"></script>
+  <script type="text/javascript" src="static/js/sound.js"></script>
+  <script type="text/javascript" src="static/js/unittest.js"></script>
+  <script type="text/javascript" src="static/js/profile.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top">
+      <h2><% first_name %> <% last_name %>'s Profile</h2>
+    </div>
+    <div class="center">
+      <div class="sidebar">
+	<div class="box" id="friends">
+	  <input id="friend_button" type="button" value="Add me as a friend!">
+	  <div id="friend_list">
+	  </div>
+	</div>
+	<div id="find_friends">
+	  <form id="search_form" method="post" action="/search">
+	    <input id="search_box" type="text" name="query" cols="20" value="Know someone?">
+	    <input id="search_button" type="button" value="Search for friends!">
+	  </form>
+	  <div id="friend_results">
+	  </div>
+	</div>
+      </div>
+      <div class="box grey" id="info">
+	Javascript for getting info goes here
+      </div>
+      <div class="box grey" id="wall">
+	<div id="wall_form">
+	  <form id="comment_form" method="post" action="/post">
+	    <input id="profile_id" type="hidden" name="profile_id" value="<% profile_id %>" />
+	    <textarea id="comment_box" name="msg" rows="5" cols="50">Write here...</textarea> 
+	    <input type="submit">
+	  </form>
+	</div>
+	<div id="wall_posts">
+	</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

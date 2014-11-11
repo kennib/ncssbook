@@ -1,0 +1,48 @@
+#container
+{
+	background-color: blue;
+	width: 100%;
+}
+
+#top
+{
+	color: white;	
+	font-size:30pt;
+	background-color: #4444AA;
+	text-align: center;
+	padding:10px;
+}
+
+.sidebar{
+	width: 19%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	float: left;
+}
+
+#friends
+{
+	background-color: white;
+	float: left;
+	width: 20%;
+}
+
+#find_friends
+{
+	background-color: white;
+	width: 20%;
+}
+
+#info
+{
+	float:right;
+	width: 70%;
+}
+
+#wall
+{
+	width: 70%;
+	float:right;
+}
+
