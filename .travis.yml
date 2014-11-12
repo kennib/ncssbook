@@ -5,8 +5,7 @@ python:
 
 # Command to install dependencies
 install:
-  - pip install .
   - pip install obiwan
 
 # Command to run tests
-script: python typecheck.py
+script: python test.py

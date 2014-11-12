@@ -109,12 +109,13 @@ def search(response):
     pass
 
 
-server = Server()
-server.register('/', index)
-server.register('/logout', logout)
-server.register('/profile', profile)
-server.register('/profile/([0-9]+)$', profile)
-server.register('/wall', wall)
-server.register('/post', post)
-server.register('/search', search)
-server.run()
+if __name__ == '__main__':
+    server = Server()
+    server.register('/', index)
+    server.register('/logout', logout)
+    server.register('/profile', profile)
+    server.register('/profile/([0-9]+)$', profile)
+    server.register('/wall', wall)
+    server.register('/post', post)
+    server.register('/search', search)
+    server.run()
