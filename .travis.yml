@@ -1,0 +1,12 @@
+# Language and language version
+language: python
+python:
+  - "3.4"
+
+# Command to install dependencies
+install:
+  - pip install .
+  - pip install obiwan
+
+# Command to run tests
+script: python typecheck.py
